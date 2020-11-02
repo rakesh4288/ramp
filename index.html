@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <!-- Jquery CDN -->
+    <script src="js/jquery.min.js"></script>
+    <title>National Ramp</title>
+</head>
+<body>
+<!-- Top navbar for medium and large screen-->
+<nav id="nav-top" class="navbar navbar-expand-lg bg-blue-color">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <a id="top-logo" class="navbar-brand d-sm-none d-md-block" href="#">
+                <img src="images/logo.png" class="d-inline-block align-top img-fluid" width="200" height="30" alt="" loading="lazy">
+            </a>
+            <ul class="navbar-nav align-items-center ml-auto">
+                <div class="ml-auto d-sm-block d-md-none xs-text-top-right">
+                    <li class="nav-item active mt-5">
+                        <a href="#">
+                            <img src="images/download.png" class="img-fluid" height="70" width="150" alt="">
+                        </a>
+                    </li>
+                </div>
+                    <br>
+                <li class="nav-item active d-none d-md-block">
+                    <span class="nav-link text-green-color">Welcome! Hilendra Kolambe |</span>
+                </li>
+                <li class="nav-item active d-none d-md-block">
+                    <a class="nav-link text-danger" href="#">Logout</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <div class="dropdown">
+                        <a class="btn btn-outline-success btn-sm mt-1 ml-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Top navbar for small and extra small screen-->
+<div id="top-nav-small-wrapper">
+    <div id="top-nav-small-container">
+
+        <div class="container-fluid">
+            <div class="row">
+                 <a id="top-logo" class="navbar-brand" href="#">
+                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" width="160" height="30" alt="" loading="lazy">
+                 </a>
+           </div>
+            <div class="row">
+                <div class="d-inline">
+                    <b class="nav-link text-white">National Ramp Configurator</b>
+                    <span class="nav-link text-green-color">Welcome! Hilendra Kolambe |</span>
+                </div>
+                 <div class="d-inline ml-auto text-center pr-3">
+                     <a href="#">
+                         <img src="images/info.png" class="img-fluid d-inline" height="40" width="40" alt="">
+                     </a>
+                     <a class="nav-link text-danger" href="#">Logout</a>
+                </div>
+            </div>
+            <div style="height: 1px; width: 100%;background-color: #477299;">
+            </div>
+            <div class="row align-items-center">
+                <div class="d-inline">
+                        <a href="#">
+                            <img class="nav-link d-inline img-fluid" src="images/undo.png" height="70" width="70" alt="">
+                        </a>
+                        <select class="form-control d-inline" name="" id="">
+                            <option value="">Default</option>
+                            <option value="">Value 1</option>
+                            <option value="">Value 2</option>
+                            <option value="">Value 3</option>
+                        </select>
+                </div>
+                 <div class="d-inline ml-auto text-center pr-3">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Administration
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div style="height: 1px; width: 100%;background-color: #477299;">
+            </div>
+            <div class="row align-items-center">
+                <div class="d-inline">
+                    <a href="#" class="btn btn-info btn-sm m-3">REQUEST A QUOTE</a>
+                   
+                </div>
+                 <div class="d-inline ml-auto text-center ">
+                    <a href="#">
+                        <img src="images/download.png" class="img-fluid" height="70" width="155" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+  </div>
+  <button id="nav-toggle-btn" class="" type="button">
+    <span class="navbar-toggler-icon">
+        <svg id="top-nav-icon" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+             <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+        </svg>
+    </span>
+</button>
+
+</div>
+<!-- bottom navbar -->
+<div class="d-flex toggled" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div id="overflow-wrapper" class="overflow-auto">
+        <div class="list-group list-group-flush">
+            <div id="left-slide-top" class="bg-blue-color">
+              <div align="center" class="containter">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <img src="images/logo.png" class="d-inline-block align-top img-fluid" width="170" height="35" alt="" loading="lazy">
+                    </li>
+                    <!--xs text-->
+                    <div class=" d-inline">
+                        <li class="nav-item xs-text-top active">
+                            <b class="nav-link text-white">National Ramp Configurator</b>
+                        </li>
+                    </div>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+            <div class="list-group-item bg-light">
+                
+                    <!-- Menu option 1 -->
+                    <button id="menu1" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Double Platforms
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                        </svg>
+                    </button>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <button class="sub-menu-btn">4x8 Platform</button>
+                            <button class="sub-menu-btn">5x8 Platform</button>
+                            <button class="sub-menu-btn">5x10 Platform</button>
+                        </div>
+                    </div>
+             
+            </div>
+            
+           <div class="list-group-item bg-light">
+               <!-- Menu option 2 -->
+               <button id="menu2" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Single Platforms
+                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                   </svg>
+               </button>
+               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                   <div class="card-body">
+                       <button class="sub-menu-btn">Item 1</button>
+                       <button class="sub-menu-btn">Item 2</button>
+                       <button class="sub-menu-btn">Item 3</button>
+                   </div>
+               </div>
+           </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 3 -->
+                <button id="menu3" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Pie Platforms
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="sub-menu-btn">Item 1</button>
+                        <button class="sub-menu-btn">Item 2</button>
+                        <button class="sub-menu-btn">Item 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 4 -->
+                <button id="menu4" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Ramps
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="sub-menu-btn">Item 1</button>
+                        <button class="sub-menu-btn">Item 2</button>
+                        <button class="sub-menu-btn">Item 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 5 -->
+                <button id="menu5" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Grid
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div align="center">
+                            <img src="images/grid.jpg" class="img-fluid" height="60" width="60" alt="">
+                            <span>Enabled:
+                                 <label class="switch">
+                                     <input type="checkbox" checked="">
+                                     <span class="slider round"></span>
+                                 </label>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 6 -->
+                <button id="menu6" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Axis
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div align="center">
+                            <img src="images/axis.png" class="img-fluid" height="40" width="40" alt="">
+                            <span>Enabled:
+                                 <label class="switch">
+                                     <input type="checkbox" checked="">
+                                     <span class="slider round"></span>
+                                 </label>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 7 -->
+                <button id="menu7" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Entrance End Loops
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div align="center">
+                            <img src="images/loop.png" class="img-fluid" height="50" width="50" alt="">
+                            <span>Disable:
+                                 <label class="switch">
+                                     <input type="checkbox">
+                                     <span class="slider round"></span>
+                                 </label>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group-item bg-light">
+                <!-- Menu option 8 -->
+                <button id="menu8" class="menu-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Landing Pad
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="menu-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+                    </svg>
+                </button>
+
+                <div id="collapseEight" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div align="center">
+                            <img src="images/pad.png" class="img-fluid" height="50" width="50" alt="">
+                            <span>Enabled:
+                                 <label class="switch">
+                                     <input type="checkbox" checked="">
+                                     <span class="slider round"></span>
+                                 </label>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar d-none d-lg-block navbar-expand-lg navbar-light bg-light border-bottom body-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <span style="font-size: 18px" class="nav-link text-success">National Ramp Configurator | <span class="text-danger">hnk01_02092020</span> | <span style="font-size: 16px;">LIBERTY</span></span>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a href="#">
+                            <img class="nav-link img-fluid" src="images/undo.png" height="50" width="50" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-control" name="" id="">
+                            <option value="">Default</option>
+                            <option value="">Value 1</option>
+                            <option value="">Value 2</option>
+                            <option value="">Value 3</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="navbar-nav align-items-center ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-info btn-sm m-3">REQUEST A QUOTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <img src="images/download.png" class="img-fluid" height="100" width="200" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <img src="images/info.png" class="img-fluid" height="50" width="50" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <button class="btn-menu" id="menu-toggle">
+            <svg id="icon-right" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill icon-rotate" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
+            </svg>
+        </button>
+
+        <div class="container-fluid">
+            <div align="center">
+                    <img src="images/back-image.JPG" class="img-fluid" height="750" width="750" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+
+
+<!-- Optional JavaScript -->
+<script>
+    $( document ).ready(function() {
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#icon-right").toggleClass("icon-rotate");
+       // $("#nav-toggle-btn").toggle();
+    });
+    $("#nav-toggle-btn").click(function(e) {
+        e.preventDefault();
+        $("#top-nav-icon").toggleClass("top-nav-icon-rotate");
+        $('#top-nav-small-container').toggle();
+        // $("#menu-toggle").toggle();
+    });
+
+    $( function() {
+        $( "#menu1" ).on( "click", function() {
+            $( "#menu1 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu2" ).on( "click", function() {
+            $( "#menu2 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu3" ).on( "click", function() {
+            $( "#menu3 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu4" ).on( "click", function() {
+            $( "#menu4 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu5" ).on( "click", function() {
+            $( "#menu5 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu6" ).on( "click", function() {
+            $( "#menu6 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu7" ).on( "click", function() {
+            $( "#menu7 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+        $( "#menu8" ).on( "click", function() {
+            $( "#menu8 .menu-icon" ).toggleClass( "menu-icon-rotate", 1000 );
+        });
+    } );
+});
+   
+</script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
