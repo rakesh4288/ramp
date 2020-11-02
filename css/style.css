@@ -1,15 +1,10 @@
-body {
-    font-family: 'Andika';
-    font-size: 14px;
-}
-
 .bg-blue-color
 {
-    background-color: #121e29;
+    background-color: #012d54;
 }
 .text-green-color
 {
-    color: #c0c6f5;
+    color: #b9d339;
 }
 .bg-green-color
 {
@@ -28,20 +23,18 @@ body {
     padding-bottom: 0;
     margin: 0 auto;
 }
-
-.menu-btn{
-    background-color: #032d33;
+.menu-btn
+{
+    background-color: #012d54;
     color: white;
     width: 100%;
     border-radius: 20px;
     text-align: left;
     padding: 2px 1px 2px 10px;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 15px ;
+    font-weight: bold;
     border: 2px solid white;
-    line-height: 32px;
 }
-
 .menu-btn:focus
 {
     outline: none;
@@ -49,8 +42,7 @@ body {
 .menu-icon
 {
     float: right;
-    margin-top: 8px;
-    margin-right: 10px;
+    margin-top: 5px;
 }
 .sub-menu-btn
 {
@@ -179,8 +171,9 @@ input:checked + .slider:before {
     margin-left: 0;
 }
 
-.btn-menu{
-    background: #07a4ef;
+.btn-menu
+{
+    background: #012d54;
     color: white;
     border: none;
     padding: 17px 10px 17px 10px;
@@ -188,11 +181,10 @@ input:checked + .slider:before {
     margin-top: 15%;
     position: absolute;
 }
-
-.btn-menu:focus{
+.btn-menu:focus
+{
     outline: none;
 }
-
 @media (min-width: 768px) {
     #sidebar-wrapper {
         margin-left: 0;
@@ -262,21 +254,19 @@ input:checked + .slider:before {
     }
     #top-nav-small-wrapper
     {
-        /* position: absolute; */
-        position: relative;
+        position: absolute;
         display: block;
         z-index: 1;
-        background: #ace9ea;
     }
     #nav-toggle-btn
     {
         display: block;
-        background: #07a4ef;
+        background: #b9d339;
         color: white;
         border: none;
         padding: 0px 15px 0px 15px;
         border-radius: 0px 0px 10px 10px;
-        /* margin-left: 250px; */
+        margin-left: 250px;
     }
     #nav-toggle-btn:focus
     {
@@ -298,9 +288,4 @@ input:checked + .slider:before {
     {
         margin-top: 300px;
     }
-}
-
-
-.body-nav{
-    box-shadow: 1px 2px 3px #888;
 }
